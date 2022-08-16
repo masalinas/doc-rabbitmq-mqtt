@@ -21,6 +21,8 @@ Ports List:
 MQTT over WebSocket can be accessed at ws://localhost:15675/ws.
 
 # Test
+Using mosquitto mqtt pub/sub clients
+
 ```shell
 mosquitto_sub -t test
 mosquitto_pub -t test -m 'Hello RabbitMQ'
