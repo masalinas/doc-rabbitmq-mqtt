@@ -13,7 +13,7 @@ docker run -it --name rabbitmq -p 5672:5672 -p 15672:15672 -p 1883:1883 -p 15675
 
 Ports List:
 
-- **Management Web UI** 15672
+- **Management Web UI:** 15672
 - **MQTT protocol:** 1883
 - **WebSocket protocol:** 15675
 - **AMQP:** 5672
