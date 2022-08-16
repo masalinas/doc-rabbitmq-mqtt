@@ -16,8 +16,10 @@ docker run -it --name rabbitmq -p 5672:5672 -p 15672:15672 -p 1883:1883 -p 15675
 - MQTT protocol port 1883
 - WebSocket protocol port 15675
 
+MQTT over WebSocket can be accessed at ws://localhost:15675/ws.
+
 # Test
 ```shell
-mosquitto_sub -h localhost -t test
-mosquitto_pub -h 127.0.0.1 -t test -m 'Hello RabbitMQ'
+mosquitto_sub -t test
+mosquitto_pub -t test -m 'Hello RabbitMQ'
 ```
